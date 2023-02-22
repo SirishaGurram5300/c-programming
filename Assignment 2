@@ -1,0 +1,18 @@
+//diff btw evensum and oddsum
+#include<stdio.h>
+main(){
+	int n,i,evensum=0,oddsum=0,diff;
+	scanf("%d",&n);
+	i=1;
+	while(i<=n){
+	if(i%2==0)
+	evensum=evensum+i;
+	else
+	oddsum=oddsum+i;
+	i++;
+    }
+	diff=oddsum-evensum;
+	printf("evensum %d\n",evensum);
+	printf("oddsum %d\n",oddsum);
+	printf("the diff is %d\n",diff);
+}
